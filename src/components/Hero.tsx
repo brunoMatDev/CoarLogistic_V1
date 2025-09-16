@@ -24,7 +24,7 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative z-10 container mt-10 mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-in">
           {/* Logo */}
           <div className="mb-24">
