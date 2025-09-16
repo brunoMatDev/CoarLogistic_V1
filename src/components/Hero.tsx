@@ -1,6 +1,7 @@
 import { MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import heroImage from '@/assets/hero-transport.jpg';
+import Logo from '../assets/LogoAzul-Photoroom.png'
 
 const Hero = () => {
   const openWhatsApp = () => {
@@ -26,17 +27,12 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-in">
           {/* Logo */}
-          <div className="mb-8">
-            <div className="text-6xl sm:text-7xl md:text-8xl font-bold mb-4">
-              <span className="text-white drop-shadow-lg">COAR</span>
-            </div>
-            <div className="text-4xl sm:text-5xl md:text-6xl font-light">
-              <span className="text-primary drop-shadow-lg">LOGISTIC</span>
-            </div>
+          <div className="mb-24">
+            <img src={Logo} alt="COAR Logo" className="h-22 w-auto mx-auto" />
           </div>
 
-          {/* Tagline */}
-          <div className="max-w-4xl mx-auto mb-12">
+           {/* Tagline */}
+           <div className="max-w-4xl mx-auto mb-12">
             <h1 className="text-xl sm:text-2xl md:text-3xl font-light text-white mb-6 drop-shadow-md">
               Courier y Transporte Internacional para Comercio Exterior
             </h1>

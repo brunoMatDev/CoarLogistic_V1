@@ -1,4 +1,5 @@
 import { Linkedin, Instagram, MessageCircle } from 'lucide-react';
+import Logo from '../assets/LogoAzul-Photoroom.png'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -14,10 +15,7 @@ const Footer = () => {
           {/* Logo y Descripción */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="text-3xl font-bold">
-                <span className="text-white">COAR</span>
-                <span className="text-primary ml-1">LOGISTIC</span>
-              </div>
+              <img src={Logo} alt="COAR Logo" className="h-14 w-auto" />
             </div>
             <p className="text-white/80 mb-6 max-w-md">
               Especialistas en courier y transporte internacional para comercio exterior. 
