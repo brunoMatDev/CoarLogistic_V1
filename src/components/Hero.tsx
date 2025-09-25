@@ -20,7 +20,7 @@ const Hero = () => {
           backgroundRepeat: 'no-repeat'
         }}
       >
-        <div className="absolute inset-0 hero-gradient opacity-90"></div>
+        <div className="absolute inset-0 hero-gradient opacity-75"></div>
       </div>
 
       {/* Content */}
@@ -47,7 +47,7 @@ const Hero = () => {
             <Button 
               size="lg" 
               onClick={openWhatsApp}
-              className="btn-whatsapp text-white font-semibold px-8 py-4 text-lg hover:shadow-lg"
+              className="bg-gradient-to-r from-secondary to-primary text-white font-semibold px-8 py-4 text-lg hover:shadow-lg hover:from-[#25D366] hover:to-[#128C7E] transition-all duration-300"
             >
               <MessageCircle className="mr-2 h-5 w-5" />
               Contactar por WhatsApp
@@ -60,7 +60,7 @@ const Hero = () => {
                 const element = document.getElementById('servicios');
                 if (element) element.scrollIntoView({ behavior: 'smooth' });
               }}
-              className="bg-white/10 border-white/30 text-white hover:bg-white/20 px-8 py-4 text-lg backdrop-blur-sm"
+              className="bg-white/10 border-white/30 text-white hover:bg-white/20 hover:border-white/50 px-8 py-4 text-lg backdrop-blur-sm transition-all duration-300"
             >
               Conocer Servicios
             </Button>

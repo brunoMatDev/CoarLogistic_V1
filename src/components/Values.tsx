@@ -62,7 +62,7 @@ const Values = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 group-hover:shadow-lg">
-                <value.icon className="w-10 h-10 text-primary group-hover:text-secondary transition-colors duration-300" />
+                <value.icon className="w-10 h-10 text-primary group-hover:text-orange-500 transition-colors duration-300" />
               </div>
               
               <h3 className="text-xl font-bold text-secondary mb-3 group-hover:text-primary transition-colors duration-300">
@@ -81,7 +81,6 @@ const Values = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/10 to-transparent h-px"></div>
           <div className="flex justify-center">
             <div className="bg-background px-8">
-              <div className="w-3 h-3 bg-primary rounded-full animate-pulse"></div>
             </div>
           </div>
         </div>

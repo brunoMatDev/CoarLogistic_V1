@@ -2,53 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
-/* COAR LOGISTIC Design System
+/* COAR LOGISTIC Design System - Nueva Paleta
 All colors MUST be HSL following brand guidelines.
-Corporate colors: Orange (#FF7F32), Blue (#023A5B), White (#FCFEFF)
+Nueva paleta: Verde Azulado (#00767E), Rojo Profundo (#7E0800), Neutral (#F4F7F7)
+Colores base: #00767E, #00494E, #4DBCC3, #7E0800, #F4F7F7
 */
 
 @layer base {
   :root {
-    /* COAR LOGISTIC Brand Colors */
-    --background: 0 0% 99%;
-    --foreground: 202 89% 18%;
+    /* COAR LOGISTIC - Nueva Paleta de Colores */
+    --background: 180 20% 97%;  /* #F4F7F7 - Fondo principal */
+    --foreground: 187 100% 15%; /* #00494E - Texto oscuro */
 
-    --card: 0 0% 99%;
-    --card-foreground: 202 89% 18%;
+    --card: 0 0% 100%;  /* Blanco puro para tarjetas */
+    --card-foreground: 187 100% 15%; /* #00494E - Texto en tarjetas */
 
-    --popover: 0 0% 99%;
-    --popover-foreground: 202 89% 18%;
+    --popover: 0 0% 100%;  /* Blanco puro para popovers */
+    --popover-foreground: 187 100% 15%; /* #00494E - Texto en popovers */
 
-    /* Primary: COAR Orange */
-    --primary: 21 100% 60%;
-    --primary-foreground: 202 89% 18%;
-    --primary-hover: 21 100% 55%;
+    /* Primary: Verde Azulado Intenso - #00767E */
+    --primary: 187 100% 24%;  /* #00767E - Color base */
+    --primary-foreground: 0 0% 100%;  /* Blanco para texto sobre primary */
+    --primary-hover: 187 100% 30%;  /* #00919B - Más vibrante para hover */
 
-    /* Secondary: COAR Blue */
-    --secondary: 202 89% 18%;
-    --secondary-foreground: 0 0% 99%;
-    --secondary-hover: 202 89% 25%;
+    /* Secondary: Verde Azulado Oscuro - #00494E */
+    --secondary: 187 100% 15%;  /* #00494E - Más oscuro para contrastes */
+    --secondary-foreground: 0 0% 100%;  /* Blanco para texto sobre secondary */
+    --secondary-hover: 187 100% 20%;  /* #00636A - Tono intermedio para hover */
 
-    /* Accent: Light Blue */
-    --accent: 202 30% 95%;
-    --accent-foreground: 202 89% 18%;
+    /* Accent: Verde Azulado Suave - #4DBCC3 */
+    --accent: 187 50% 70%;  /* #4DBCC3 - Más claro para fondos suaves */
+    --accent-foreground: 187 100% 15%;  /* #00494E - Texto oscuro sobre accent */
 
-    --muted: 202 15% 95%;
-    --muted-foreground: 202 25% 45%;
+    /* Muted: Verde Azulado Pastel - #80D4D9 */
+    --muted: 187 30% 80%;  /* #80D4D9 - Pastel/muy claro */
+    --muted-foreground: 187 100% 20%;  /* #00636A - Texto intermedio */
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 99%;
+    /* Destructive: Rojo Profundo - #7E0800 */
+    --destructive: 0 100% 25%;  /* #7E0800 - Rojo profundo para acciones destructivas */
+    --destructive-foreground: 0 0% 100%;  /* Blanco para texto sobre destructive */
 
-    --border: 202 20% 90%;
-    --input: 202 20% 90%;
-    --ring: 21 100% 60%;
+    /* Border e Input: Verde Azulado Suave */
+    --border: 187 30% 85%;  /* Borde suave */
+    --input: 187 30% 85%;  /* Input suave */
+    --ring: 187 100% 24%;  /* Ring usando el color primary */
 
     --radius: 0.5rem;
 
-    /* COAR LOGISTIC Gradients */
+    /* COAR LOGISTIC Gradients - Nueva Paleta */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-hover)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--secondary)) 0%, hsl(var(--secondary-hover)) 50%, hsl(var(--primary)) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(var(--background)), hsl(var(--accent)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--secondary)) 0%, hsl(var(--primary)) 50%, hsl(var(--accent)) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--background)), hsl(var(--muted)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--muted)));
     
     /* COAR LOGISTIC Shadows */
     --shadow-card: 0 4px 20px hsl(var(--secondary) / 0.1);
@@ -61,40 +66,44 @@ Corporate colors: Orange (#FF7F32), Blue (#023A5B), White (#FCFEFF)
   }
 
   .dark {
-    /* Dark mode usando los mismos colores de marca COAR */
-    --background: 202 89% 8%;
-    --foreground: 0 0% 99%;
+    /* Dark mode - Nueva Paleta COAR */
+    --background: 187 100% 8%;  /* Fondo oscuro usando el verde azulado */
+    --foreground: 0 0% 95%;  /* Texto claro */
 
-    --card: 202 89% 10%;
-    --card-foreground: 0 0% 99%;
+    --card: 187 100% 12%;  /* Tarjetas oscuras */
+    --card-foreground: 0 0% 95%;  /* Texto claro en tarjetas */
 
-    --popover: 202 89% 10%;
-    --popover-foreground: 0 0% 99%;
+    --popover: 187 100% 12%;  /* Popovers oscuros */
+    --popover-foreground: 0 0% 95%;  /* Texto claro en popovers */
 
-    --primary: 21 100% 60%;
-    --primary-foreground: 202 89% 18%;
-    --primary-hover: 21 100% 65%;
+    /* Primary: Verde Azulado más vibrante en modo oscuro */
+    --primary: 187 100% 35%;  /* #00919B - Más vibrante para contraste */
+    --primary-foreground: 187 100% 8%;  /* Fondo oscuro para texto sobre primary */
+    --primary-hover: 187 100% 40%;  /* Aún más vibrante para hover */
 
-    --secondary: 202 30% 90%;
-    --secondary-foreground: 202 89% 18%;
-    --secondary-hover: 202 30% 85%;
+    /* Secondary: Verde Azulado oscuro para modo oscuro */
+    --secondary: 187 100% 20%;  /* #00636A - Tono intermedio */
+    --secondary-foreground: 0 0% 95%;  /* Texto claro sobre secondary */
+    --secondary-hover: 187 100% 25%;  /* Más claro para hover */
 
-    --muted: 202 89% 15%;
-    --muted-foreground: 202 20% 70%;
+    /* Accent: Verde Azulado suave para modo oscuro */
+    --accent: 187 50% 25%;  /* Versión oscura del accent */
+    --accent-foreground: 0 0% 95%;  /* Texto claro sobre accent */
 
-    --accent: 202 89% 15%;
-    --accent-foreground: 0 0% 99%;
+    --muted: 187 30% 20%;  /* Verde azulado muy oscuro */
+    --muted-foreground: 187 20% 70%;  /* Texto intermedio */
 
-    --destructive: 0 62.8% 50%;
-    --destructive-foreground: 0 0% 99%;
+    /* Destructive: Rojo más intenso en modo oscuro */
+    --destructive: 0 100% 40%;  /* Rojo más intenso para modo oscuro */
+    --destructive-foreground: 0 0% 95%;  /* Texto claro sobre destructive */
 
-    --border: 202 89% 20%;
-    --input: 202 89% 20%;
-    --ring: 21 100% 60%;
+    --border: 187 30% 25%;  /* Bordes oscuros */
+    --input: 187 30% 25%;  /* Inputs oscuros */
+    --ring: 187 100% 35%;  /* Ring usando el primary */
   }
 }
 
-/* COAR LOGISTIC Custom Components */
+/* COAR LOGISTIC Custom Components - Nueva Paleta */
 @layer components {
   .hero-gradient {
     background: var(--gradient-hero);
@@ -103,6 +112,10 @@ Corporate colors: Orange (#FF7F32), Blue (#023A5B), White (#FCFEFF)
   .card-gradient {
     background: var(--gradient-card);
     box-shadow: var(--shadow-card);
+  }
+  
+  .accent-gradient {
+    background: var(--gradient-accent);
   }
   
   .btn-whatsapp {
@@ -115,10 +128,41 @@ Corporate colors: Orange (#FF7F32), Blue (#023A5B), White (#FCFEFF)
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
   }
-
+  
   .navbar-blur {
     backdrop-filter: blur(10px);
     background: hsl(var(--background) / 0.95);
+  }
+  
+  /* Nuevos componentes con la paleta actualizada */
+  .btn-primary {
+    background: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+    transition: var(--transition-fast);
+  }
+  
+  .btn-primary:hover {
+    background: hsl(var(--primary-hover));
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-button);
+  }
+  
+  .btn-secondary {
+    background: hsl(var(--secondary));
+    color: hsl(var(--secondary-foreground));
+    transition: var(--transition-fast);
+  }
+  
+  .btn-secondary:hover {
+    background: hsl(var(--secondary-hover));
+  }
+  
+  .text-accent {
+    color: hsl(var(--accent-foreground));
+  }
+  
+  .bg-accent-soft {
+    background: hsl(var(--muted));
   }
 }
 

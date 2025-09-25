@@ -26,7 +26,7 @@ const Footer = () => {
             <div className="flex space-x-4">
               <button
                 onClick={() => window.open('https://linkedin.com/company/coar-logistic', '_blank')}
-                className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors duration-300"
+                className="bg-white/10 hover:bg-[#0077B5] p-2 rounded-full transition-colors duration-300"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-5 h-5" />
@@ -34,7 +34,7 @@ const Footer = () => {
               
               <button
                 onClick={() => window.open('https://instagram.com/coar_logistic', '_blank')}
-                className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors duration-300"
+                className="bg-white/10 hover:bg-[#E4405F] p-2 rounded-full transition-colors duration-300"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
@@ -60,7 +60,7 @@ const Footer = () => {
                     const element = document.getElementById('servicios');
                     if (element) element.scrollIntoView({ behavior: 'smooth' });
                   }}
-                  className="hover:text-primary transition-colors"
+                  className="hover:text-primary transition-colors duration-300"
                 >
                   Transporte Marítimo
                 </button>
@@ -71,7 +71,7 @@ const Footer = () => {
                     const element = document.getElementById('servicios');
                     if (element) element.scrollIntoView({ behavior: 'smooth' });
                   }}
-                  className="hover:text-primary transition-colors"
+                  className="hover:text-primary transition-colors duration-300"
                 >
                   Transporte Aéreo
                 </button>
@@ -82,7 +82,7 @@ const Footer = () => {
                     const element = document.getElementById('servicios');
                     if (element) element.scrollIntoView({ behavior: 'smooth' });
                   }}
-                  className="hover:text-primary transition-colors"
+                  className="hover:text-primary transition-colors duration-300"
                 >
                   Courier Internacional
                 </button>
@@ -98,7 +98,7 @@ const Footer = () => {
               <p>
                 <a 
                   href="tel:+51999999999" 
-                  className="hover:text-primary transition-colors"
+                  className="hover:text-primary transition-colors duration-300"
                 >
                   +51 999 999 999
                 </a>
@@ -106,7 +106,7 @@ const Footer = () => {
               <p>
                 <a 
                   href="mailto:info@coarlogistic.com" 
-                  className="hover:text-primary transition-colors"
+                  className="hover:text-primary transition-colors duration-300"
                 >
                   info@coarlogistic.com
                 </a>

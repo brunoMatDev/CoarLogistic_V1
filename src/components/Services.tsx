@@ -69,7 +69,7 @@ const Services = () => {
                   <img 
                     src={service.image} 
                     alt={service.title}
-                    className="w-20 h-20 mx-auto group-hover:scale-110 transition-transform duration-300"
+                    className={`${service.title === "Transporte Aéreo" ? 'w-28 h-28' : 'w-24 h-24'} mx-auto group-hover:scale-110 transition-transform duration-300`}
                   />
                 </div>
                 <CardTitle className="text-2xl font-bold text-secondary mb-2">
@@ -95,7 +95,7 @@ const Services = () => {
 
         {/* CTA Section */}
         <div className="mt-16 text-center">
-          <div className="bg-gradient-to-r from-secondary to-primary rounded-2xl p-8 text-white">
+          <div className="bg-gradient-to-r from-secondary/80 to-primary/80 rounded-2xl p-8 text-white">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
               ¿Necesitas una solución personalizada?
             </h3>
@@ -107,7 +107,7 @@ const Services = () => {
                 const element = document.getElementById('contacto');
                 if (element) element.scrollIntoView({ behavior: 'smooth' });
               }}
-              className="bg-white text-secondary px-8 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105"
+              className="bg-white/10 border-white/30 text-white hover:bg-white/20 hover:border-white/50 px-8 py-3 rounded-lg font-semibold backdrop-blur-sm transition-all duration-300"
             >
               Solicitar Cotización
             </button>

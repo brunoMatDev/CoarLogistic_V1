@@ -32,7 +32,7 @@ const Contact = () => {
       icon: MapPin,
       title: "Dirección",
       content: "Lima, Perú",
-      action: null
+      action: () => window.open('https://maps.google.com/?q=Lima,Peru', '_blank')
     },
     {
       icon: Clock,
@@ -152,7 +152,7 @@ const Contact = () => {
                 ))}
               </div>
           {/* WhatsApp CTA */}
-          <div className="bg-gradient-to-r from-secondary to-primary rounded-2xl p-8 text-center text-white mb-12">
+          <div className="bg-gradient-to-r from-secondary/80 to-primary/80 rounded-2xl p-8 text-center text-white mb-12">
             <MessageCircle className="w-16 h-16 mx-auto mb-4 animate-float" />
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
               ¡Conversemos por WhatsApp!
@@ -163,7 +163,7 @@ const Contact = () => {
             <Button 
               size="lg"
               onClick={openWhatsApp}
-              className="btn-whatsapp text-white font-semibold px-8 py-3 text-lg hover:shadow-lg"
+              className="bg-gradient-to-r from-secondary to-primary text-white font-semibold px-8 py-3 text-lg hover:shadow-lg hover:from-[#25D366] hover:to-[#128C7E] transition-all duration-300"
             >
               <MessageCircle className="mr-2 h-5 w-5" />
               Escribir por WhatsApp
@@ -183,7 +183,7 @@ const Contact = () => {
                 variant="outline"
                 size="lg"
                 onClick={() => window.open('https://linkedin.com/company/coar-logistic', '_blank')}
-                className="border-secondary text-secondary hover:bg-secondary hover:text-white"
+                className="border-[#0077B5] text-[#0077B5] hover:bg-[#0077B5] hover:text-white transition-all duration-300"
               >
                 <Linkedin className="w-5 h-5 mr-2" />
                 LinkedIn
@@ -193,10 +193,20 @@ const Contact = () => {
                 variant="outline"
                 size="lg"
                 onClick={() => window.open('https://instagram.com/coar_logistic', '_blank')}
-                className="border-primary text-primary hover:bg-primary hover:text-white"
+                className="border-[#E4405F] text-[#E4405F] hover:bg-[#E4405F] hover:text-white transition-all duration-300"
               >
                 <Instagram className="w-5 h-5 mr-2" />
                 Instagram
+              </Button>
+              
+              <Button
+                variant="outline"
+                size="lg"
+                onClick={openWhatsApp}
+                className="border-[#25D366] text-[#25D366] hover:bg-[#25D366] hover:text-white transition-all duration-300"
+              >
+                <MessageCircle className="w-5 h-5 mr-2" />
+                WhatsApp
               </Button>
               
             </div>

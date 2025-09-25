@@ -40,13 +40,13 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-8">
             <button
               onClick={() => scrollToSection('inicio')}
-              className="text-foreground hover:text-primary transition-colors"
+              className={`${isScrolled ? 'text-foreground hover:text-primary' : 'text-white hover:text-primary'} transition-colors duration-300`}
             >
               Inicio
             </button>
             <button
               onClick={() => scrollToSection('servicios')}
-              className="text-foreground hover:text-primary transition-colors"
+              className={`${isScrolled ? 'text-foreground hover:text-primary' : 'text-white hover:text-primary'} transition-colors duration-300`}
             >
               Servicios
             </button>
@@ -56,7 +56,7 @@ const Navbar = () => {
               href="https://www.bcrp.gob.pe/docs/Estadisticas/Cuadros-Estadisticos/NC_007.xls"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center space-x-1 text-foreground hover:text-primary transition-colors"
+              className={`${isScrolled ? 'text-foreground hover:text-primary' : 'text-white hover:text-primary'} transition-colors duration-300`}
             >
               <span>Conversiones</span>
             </a>
@@ -65,14 +65,14 @@ const Navbar = () => {
               href="https://www.apn.gob.pe/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center space-x-1 text-foreground hover:text-primary transition-colors"
+              className={`${isScrolled ? 'text-foreground hover:text-primary' : 'text-white hover:text-primary'} transition-colors duration-300`}
             >
               <span>Puertos</span>
             </a>
 
             <button
               onClick={() => scrollToSection('contacto')}
-              className="text-foreground hover:text-primary transition-colors"
+              className={`${isScrolled ? 'text-foreground hover:text-primary' : 'text-white hover:text-primary'} transition-colors duration-300`}
             >
               Contacto
             </button>
